@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://krushilnaik.github.io/Password-Generator/">
+	<a href="https://krushilnaik.github.io/VaycayRC/">
 		<img src="https://i.imgur.com/nT9LavM.png" height="40" />
 	</a>
 </p>
