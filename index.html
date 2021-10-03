@@ -4,14 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="stylesheet" href="assets/css/styles.css" />
-
 		<title>Weather Dashboard</title>
-	</head>
-	<body>
-		<noscript>This site requires JavaScript to run</noscript>
 
-		<script src="assets/js/script.js"></script>
+		<!-- External CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		/>
+
+		<!-- Internal CSS -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Weather Dashboard</h1>
+		</header>
+
+		<main>
+			<section id="search-section">
+				<h2>Search for a City:</h2>
+				<div id="search">
+					<input type="text" name="search-field" id="search-field" placeholder="San Diego" />
+					<button type="submit">Search</button>
+				</div>
+				<hr style="height: 3px; background-color: gray; margin: 10px 0" />
+				<div id="search-history"></div>
+			</section>
+			<section id="weather-info">
+				<div id="weather-card">
+					<div class="header-row">
+						<h1 id="city"></h1>
+						<img />
+					</div>
+					<div id="current-temperature"></div>
+					<div id="current-wind"></div>
+					<div id="current-humidity"></div>
+					<div id="current-uv"></div>
+				</div>
+
+				<div id="forecast">
+					<h2>5-Day Forecast:</h2>
+					<div class="forecast-cards">
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Internal JavaScript -->
+		<script defer src="assets/js/script.js"></script>
 	</body>
 </html>
